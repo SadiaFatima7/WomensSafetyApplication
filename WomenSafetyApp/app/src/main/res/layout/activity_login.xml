@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/login_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.78"
+        android:scaleType="centerCrop"
+        android:src="@drawable/one" />
+
+    <LinearLayout
+
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Welcome"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/aclonica" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="We Welcome our Women Security App Users and hope that this app will fulfil your needs"
+            android:textColor="@android:color/white"/>
+        <EditText
+            android:id="@+id/login_phoneNo"
+            android:layout_width="match_parent"
+            android:hint="Phone Number"
+            android:ems="10"
+            android:inputType="phone"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/rounded_border"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/Login_Text"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="New Here? Register Yourself"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

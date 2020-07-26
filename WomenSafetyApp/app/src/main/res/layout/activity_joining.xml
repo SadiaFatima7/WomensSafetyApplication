@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Joining"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@color/backgroundcolor">
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logout"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/Show_Current_Location"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Map"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"/>
+   <Button
+    android:id="@+id/Show_LatLongAddress"
+    android:layout_width="230dp"
+       android:layout_marginTop="20dp"
+       android:textSize="20dp"
+    android:text="LatLong and Address"
+    android:textAllCaps="false"
+    android:textColor="@android:color/white"
+    android:background="@drawable/rounded_button"
+    android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/AddContactInfo"
+        android:layout_width="270dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Add Contact Information"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/Main_Activity"
+        android:layout_width="270dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="View Your Information"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/sendSMSBtn"
+        android:layout_width="270dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Send SMS"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

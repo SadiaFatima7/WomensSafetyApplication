@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register2">
+    <ImageView
+        android:id="@+id/registration_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.60"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p3" />
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="494dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/aclonica" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register Yourself"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/aclonica" />
+
+        <EditText
+            android:id="@+id/register_phoneNo"
+            android:layout_width="match_parent"
+            android:hint="Phone Number"
+            android:ems="10"
+            android:inputType="phone"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@android:color/black"
+            android:background="@drawable/rounded_border"
+            android:layout_height="40dp"/>
+        <EditText
+            android:id="@+id/verificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Enter OTP"
+            android:textColorHint="@android:color/black"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/sendVerificationCodebtn"
+            android:layout_width="match_parent"
+            android:text="Send Verification Code"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/RegisterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:text="Register"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

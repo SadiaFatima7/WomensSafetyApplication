@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Women Safety App</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="send_sms">SEND SMS</string>
+    <string name="type_the_number">Type the number</string>
+    <string name="type_your_message">Type Your Message</string>
+
+</resources>

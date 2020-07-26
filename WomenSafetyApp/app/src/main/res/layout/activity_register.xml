@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/registration_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.78"
+        android:scaleType="centerCrop"
+        android:src="@drawable/one" />
+
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="494dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register Yourself"
+            android:textColor="@android:color/white"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/aclonica" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:hint="Username"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/white" />
+
+
+        <EditText
+            android:id="@+id/register_phoneNo"
+            android:layout_width="match_parent"
+            android:hint="Phone Number"
+            android:ems="10"
+            android:inputType="phone"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@android:color/white"
+            android:background="@drawable/rounded_border"
+            android:layout_height="40dp"/>
+        <EditText
+            android:id="@+id/verificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_border"
+            android:gravity="center"
+            android:hint="Enter OTP"
+            android:textColorHint="@android:color/white"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/sendVerificationCodebtn"
+            android:layout_width="match_parent"
+            android:text="Send Verification Code"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/RegisterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:onClick="onRegisterClick"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/already_registered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Already Registered!! Go To Login"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>
